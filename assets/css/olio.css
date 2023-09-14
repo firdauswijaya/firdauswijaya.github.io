@@ -1,0 +1,549 @@
+:root {
+    font-size: 14px;
+}
+
+body {
+    background: #0F0F0F;
+    color: #F7F7F7;
+    font-family: 'Mulish', sans-serif;
+    line-height: 1.8;
+}
+
+a {
+    color: #F7F7F7 !important;
+    text-decoration: none;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
+.olio-navbar {
+    background: #0F0F0F;
+    color: #F7F7F7;
+    transition: all .5s;
+}
+
+.olio-navbar .navbar-nav .nav-link {
+    color: #F7F7F7;
+}
+
+.olio-navbar .navbar-nav .nav-link.active {
+    font-weight: 900;
+    position: relative;
+}
+
+.olio-navbar .navbar-nav .nav-link.active::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 5px;
+    background: #6C41FF;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+.olio-brand {
+    background: linear-gradient(137.68deg, #6E3AFF 6.63%, #52ACFF 94.53%);
+    border-radius: 50%;
+    padding: .55rem 1.25rem;
+    color: #FFFFFF;
+    font-weight: 800;
+    display: inline-block;
+}
+
+.olio-header-name {
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.olio-header-title {
+    letter-spacing: .165em;
+}
+
+.olio-header-social-icon {
+    padding: .5em .65em;
+    border-radius: 50%;
+    background: #6C41FF;
+    margin: 0 .35em;
+    font-size: 1.35em;
+    transition: all 1s;
+}
+
+#about h4, #client h4, #project h4, 
+#article h4, #contact h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.olio-loader {
+    margin-bottom: 1.35em;
+}
+
+.olio-loader .olio-loader-label {
+    font-size: 1.5em;
+    padding: .25em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    border-radius: .5em;
+}
+
+.olio-loader .olio-loader-body .progress {
+    height: .5rem;
+}
+
+.olio-loader.olio-loader-primary .olio-loader-label,
+.olio-loader.olio-loader-primary .olio-loader-body .progress-bar {
+    background: #5B33CC;
+}
+
+.olio-loader.olio-loader-info .olio-loader-label,
+.olio-loader.olio-loader-info .olio-loader-body .progress-bar {
+    background: #3870FF;
+}
+
+.olio-loader.olio-loader-warning .olio-loader-label,
+.olio-loader.olio-loader-warning .olio-loader-body .progress-bar {
+    background: #FCA04A;
+}
+
+.olio-loader.olio-loader-success .olio-loader-label,
+.olio-loader.olio-loader-success .olio-loader-body .progress-bar {
+    background: #13B799;
+}
+
+.olio-client {
+    background: #313131;
+    margin-bottom: 1.5em;
+    width: 100%;
+    padding: .5em 1em;
+    border-radius: .65em;
+    font-style: italic;
+}
+
+.olio-client div {
+    display: inline-block;
+}
+
+.olio-client-label {
+    background: #F7F7F7;
+    width: 2.5em;
+    text-align: center;
+    padding-top: .35em;
+    height: 2.5em;
+    border-radius: 50%;
+    color: #313131;
+    font-weight: 900;
+}
+
+.olio-client-body {
+    padding-left: 1em;
+}
+
+.olio-project {
+    background: linear-gradient(137.68deg, #6E3AFF 6.63%, #52ACFF 94.53%);
+    padding: 1.5em 1em;
+    border-radius: .5em;
+    overflow: hidden;
+    position: relative;
+}
+.olio-project::before,.olio-project::after, .olio-project-button::after,
+.olio-article-label::before,.olio-article-label::after, .olio-article-label span::after {
+    content: "";
+    background: rgba(255, 255, 255, 0.23);
+    position: absolute;
+    border-radius: .45rem;
+}
+
+.olio-project::before {
+    width: 5.5em;
+    height: 5em;
+    top: -1em;
+    left: -1em;
+}
+
+.olio-project::after {
+    width: 2.5em;
+    height: 4em;
+    top: 2.5em;
+    left: -.5em;
+}
+
+.olio-project h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.olio-project-button {
+    display: inline-block;
+    color: #FFFFFF;
+    padding: .25em .65em;
+    border-radius: 50%;
+    background:  rgba(255, 255, 255, 0.19);
+    font-size: 1.5em;
+}
+
+.olio-project-button::after {
+    width: 5em;
+    height: 2em;
+    bottom: -1.5em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.olio-article {
+    color: #F7F7F7;
+    margin-bottom: 2em;
+}
+
+.olio-article h5 {
+    font-size: 1.1em;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+
+.olio-article-label {
+    background: linear-gradient(137.68deg, #6E3AFF 6.63%, #52ACFF 94.53%);
+    padding: .65em;
+    border-radius: .5em;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+    transition: all .5s;
+}
+
+.olio-article:hover .olio-article-label {
+    transform: scale(1.15) rotate(-10deg);
+}
+
+.olio-article-label::before {
+    width: 5.5rem;
+    height: 4rem;
+    top: -1rem;
+    right: -1rem;
+}
+
+.olio-article-label::after {
+    width: 5rem;
+    height: 5rem;
+    top: 1.5rem;
+    right: -3rem;
+}
+
+.olio-article-label span::after {
+    width: 5rem;
+    height: 3rem;
+    bottom: -1.85rem;
+    left: -1rem;
+}
+
+.olio-contact {
+    background: #313131;
+    padding: 5em 2em 3em;
+    border-radius: 1em;
+    position: relative;
+}
+
+.olio-contact-icon {
+    padding: .5rem 1.25rem;
+    border-radius: .65rem;
+    background: linear-gradient(137.68deg, #6E3AFF 6.63%, #52ACFF 94.53%);
+    color: #FFFFFF;
+    position: absolute;
+    font-size: 2em;
+    top: -.75em;
+    right: 0;
+}
+
+.olio-contact input, .olio-contact textarea {
+    margin-bottom: 1.5em;
+    min-height: .85rem;
+    padding: .35rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: .45rem;
+    background: #D3D3D3;
+    color: #0F0F0F;
+    width: 100%;
+}
+
+.olio-contact input:focus, .olio-contact textarea:focus {
+    border: 1px solid #6C41FF;
+}
+
+.olio-contact input::placeholder, .olio-contact textarea::placeholder {
+    color: #8E8D90;
+}
+
+.olio-contact input::-ms-input-placeholder, .olio-contact textarea::-ms-input-placeholder {
+    color: #8E8D90;
+}
+
+.olio-contact button {
+    background: linear-gradient(116.11deg, #6E3AFF 16.72%, #52ACFF 71.94%);
+    border-radius: .45rem;
+    padding: .5em 1em;
+    outline: none;
+    border: none;
+    color: #F7F7F7;
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .olio-image {
+        position: relative;
+        z-index: 2;
+    }
+
+    .olio-header-box {
+        position: absolute;
+        top: 5em;
+    }
+
+    .olio-header-name {
+        position: relative;
+        z-index: 1;
+        font-size: 4em;
+        width: 4em;
+        line-height: 1.25;
+        margin-left: -7.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .olio-header-social {
+        position: absolute;
+        right: 0em;
+        bottom: 2em;
+    }
+
+    .olio-article-label {
+        font-size: 2em;
+    }
+    
+    #client h4, #project h4, #contact h4 {
+        padding: 1em 10%;
+    }
+}
+
+@media (min-width: 992px) {
+    #navbar, #header {
+        background: #181818;
+    }
+
+    .olio-navbar {
+        z-index: 3;
+        background: rgba(24, 24, 24, 0);
+    }
+    
+    .olio-navbar .navbar-nav .nav-link {
+        padding-left: 0;
+        padding-right: 3.5rem;
+    }
+
+    .olio-navbar-fixed {
+        position: fixed;
+        background:#181818;
+        left: 0;
+        right: 0;
+        padding: .5rem 10em;
+        transition: all .5s;
+    }
+
+    #navbar::before {
+        content: '';
+        position: absolute;
+        background: #313131;
+        width: 11em;
+        height: 12em;
+        border-radius: 0 0 0 3em;
+        z-index: 1;
+        right: 0;
+    }
+    
+    #header > .container::before {
+        content: '';
+        position: absolute;
+        background: #313131;
+        width: 14em;
+        height: 15em;
+        border-radius: 0 0 3em 0;
+        z-index: 1;
+        left: 0em;
+        bottom: -5em;
+    }
+
+    .spacer-lg {
+        padding-top: 1em;
+    }
+
+    .olio-header-box {
+        position: absolute;
+        top: 6.15em;
+    }
+
+    .olio-header-name {
+        font-size: 6em;
+        margin-left: -1.5em;
+    }
+
+    .olio-header-title {
+        font-size: 1.35em;
+    }
+
+    .olio-header-element, .olio-header-sub-element {
+        position: absolute;
+        border-radius: 1.25rem;
+        right: 20rem;
+        padding: 1.5em 1.45em;
+        font-size: 3em;
+        background: linear-gradient(137.68deg, #6E3AFF 6.63%, #52ACFF 94.53%);
+        overflow: hidden;
+    }
+
+    .olio-header-sub-element {
+        right: 27em;
+        top: 19.85em;
+        font-size: 1.45em;
+        border-radius: .65rem;
+    }
+
+    .olio-header-element::before, .olio-header-element::after,
+    .olio-header-element span::before, .olio-header-element span::after,
+    .olio-header-sub-element::before, .olio-header-sub-element::after,
+    .olio-header-sub-element span::before, .olio-header-sub-element span::after {
+        content: '';
+        background: rgba(255, 255, 255, 0.23);
+        position: absolute;
+    }
+
+    .olio-header-element::before, .olio-header-sub-element::before {
+        width: 2em;
+        height: 3em;
+        border-radius: .5rem;
+        top: -1.65em;
+        left: -1em;
+    }
+    
+    .olio-header-element::after, .olio-header-sub-element::after {
+        width: 2.85em;
+        height: 1em;
+        border-radius: .5rem;
+        bottom: -.5em;
+        left: -1em;
+    }
+    
+    .olio-header-element span::before, .olio-header-sub-element span::before {
+        width: 2em;
+        height: 1.45em;
+        border-radius: .5rem;
+        top: .5em;
+        right: -1em;
+    }
+    
+    .olio-header-element span::after, .olio-header-sub-element span::after {
+        width: 1em;
+        height: .85em;
+        border-radius: .5rem;
+        top: 1.65em;
+        right: -.5em;
+    }
+
+    #about h4, #client h4, #project h4, 
+    #article h4, #contact h4 {
+        font-size: 2.25em;
+        position: relative;
+    }
+
+    #about {
+        padding-top: 8em;
+    }
+
+    #about h4::before, #article h4::before {
+        content: '';
+        position: absolute;
+        width: 2em;
+        height: 2em;
+        border-radius: .45em;
+        left: -0.85em;
+        top: -0.5em;
+        background: linear-gradient(137.68deg, #6E3AFF 6.63%, #52ACFF 94.53%);
+        z-index: -1;
+    }
+
+    .olio-loader .olio-loader-label {
+        font-size: 1.35em;
+    }
+
+    .olio-project {
+        padding: 2em 2.5em .5em;
+        min-height: 12.5em;
+    }
+
+    .olio-project h5 {
+        font-size: 1.5em;
+    }
+
+    #article h4 {
+        padding-right: 30%;
+    }
+    
+    .olio-article h5 {
+        margin-top: .65em;
+        font-size: 1.2em !important;
+    }
+
+    .olio-article-label {
+        padding: 1em .65em;
+    }
+
+    #contact, #copy {
+        background: #181818;
+        padding: 5em 3em 4em;
+        position: relative;
+    }
+
+    #contact {
+        margin-top: 25em !important;
+        padding-top: 14em;
+        padding-bottom: 8em;
+    }
+
+    #copy {
+        padding: 3em 0em;
+    }
+
+    #contact .absolute-top-lg {
+        position: absolute;
+        top: -20em;
+    }
+
+    .olio-contact {
+        padding: 5em 4em 3em;
+    }
+
+    .olio-contact-icon {
+        right: -1em;
+    }
+}
+
+@media (min-width: 1400px) { 
+    :root {
+        font-size: 16px;
+    }
+
+    .spacer-lg {
+        padding-top: 8em;
+    }
+}
