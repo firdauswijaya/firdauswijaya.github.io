@@ -3,15 +3,16 @@
 }
 
 body {
-    background: #0F0F0F;
-    color: #F7F7F7;
+    background: #111111;
+    color: #ffffff;
     font-family: 'Mulish', sans-serif;
     line-height: 1.8;
 }
 
 a {
-    color: #F7F7F7 !important;
+    color: #f7f7f7 !important;
     text-decoration: none;
+
 }
 
 .z-index-2 {
@@ -19,13 +20,13 @@ a {
 }
 
 .olio-navbar {
-    background: #0F0F0F;
-    color: #F7F7F7;
+    background: #111111;
+    color: #000000;
     transition: all .5s;
 }
 
 .olio-navbar .navbar-nav .nav-link {
-    color: #F7F7F7;
+    color: #f7f7f7;
 }
 
 .olio-navbar .navbar-nav .nav-link.active {
@@ -45,7 +46,7 @@ a {
 }
 
 .olio-brand {
-    background: linear-gradient(137.68deg, #6E3AFF 6.63%, #52ACFF 94.53%);
+    background: linear-gradient(137.68deg, #39480c 6.63%, #52ACFF 94.53%);
     border-radius: 50%;
     padding: .55rem 1.25rem;
     color: #FFFFFF;
@@ -66,7 +67,7 @@ a {
 .olio-header-social-icon {
     padding: .5em .65em;
     border-radius: 50%;
-    background: #FF8C00;
+    background: #FFcb74;
     margin: 0 .35em;
     font-size: 1.35em;
     transition: all 1s;
@@ -96,6 +97,8 @@ a {
     height: .5rem;
 }
 
+
+
 .olio-loader.olio-loader-primary .olio-loader-label,
 .olio-loader.olio-loader-primary .olio-loader-body .progress-bar {
     background: #5B33CC;
@@ -116,13 +119,26 @@ a {
     background: #13B799;
 }
 
+
+.olio-clientss {
+    background: #000000;
+    margin-bottom: 1.5em;
+    width: 50%;
+    padding: .5em 1em;
+    border-radius: .65em;
+    font-style: italic;
+    color: #2f2f2f;
+}
+
+
 .olio-client {
-    background: #FF8C00;
+    background: #FFcb74;
     margin-bottom: 1.5em;
     width: 100%;
     padding: .5em 1em;
     border-radius: .65em;
     font-style: italic;
+    color: #2f2f2f;
 }
 
 .olio-client div {
@@ -130,7 +146,7 @@ a {
 }
 
 .olio-client-label {
-    background: #FFF8DC;
+    background: #f7f7f7;
     width: 2.5em;
     text-align: center;
     padding-top: .35em;
@@ -143,6 +159,31 @@ a {
 .olio-client-body {
     padding-left: 1em;
 }
+
+.olio-clients {
+   
+    display: flex;
+    align-items: flex-start;
+    padding: 4em;
+}
+
+.olio-client-labels {
+    background-color: #edf1f117;
+    border-radius: 10px;
+    color: #000000;
+    width: 70px;
+    height: 70px;
+    display: grid;
+    place-items: center;
+}
+
+.olio-client-bodys {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+}
+
 
 .olio-project {
     background: linear-gradient(137.68deg, #6E3AFF 6.63%, #52ACFF 94.53%);
