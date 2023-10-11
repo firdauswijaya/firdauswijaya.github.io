@@ -47,7 +47,7 @@ a {
 }
 
 .olio-brand {
-    background: linear-gradient(137.68deg, #39480c 6.63%, #52ACFF 94.53%);
+    
     border-radius: 50%;
     padding: .55rem 1.25rem;
     color: #FFFFFF;
@@ -68,7 +68,7 @@ a {
 .olio-header-social-icon {
     padding: .5em .65em;
     border-radius: 50%;
-    background: #44d0fa;
+    background: #6d8d97;
     margin: 0 .35em;
     font-size: 1.35em;
     transition: all 1s;

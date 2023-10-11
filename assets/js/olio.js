@@ -17,7 +17,22 @@ $("a[href*=\\#]:not([href=\\#])").on("click", function () {
     }
 });
 
-var wow = new WOW({
+function darkMode(){
+    const mode = document.getElementById("mode")
+    const body = document.body
+
+    body.classList.toggle("darkmode");
+
+    if (body.classList.contains("darkmode")) {
+        mode.innerHTML = "💡";
+     } else {
+        mode.innerHTML = "🍪"
+        }
+    }
+
+
+    
+  var wow = new WOW({
     boxClass: 'wow',
     offset: 0,
     mobile: true,
