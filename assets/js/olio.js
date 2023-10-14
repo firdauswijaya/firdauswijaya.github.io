@@ -30,7 +30,7 @@ function darkMode(){
         }
     }
 
-
+<input action="action" onclick="history.back()" type="submit" value="cancel"/>
     
   var wow = new WOW({
     boxClass: 'wow',
