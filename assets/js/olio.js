@@ -29,8 +29,7 @@ function darkMode(){
         mode.innerHTML = "🍪"
         }
     }
-
-    
+  
   var wow = new WOW({
     boxClass: 'wow',
     offset: 0,
