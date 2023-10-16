@@ -63,6 +63,13 @@ const dragStop = () => {
     autoSlide();
 }
 
+var typing = new Typed (".typing" ,{
+    strings : ["Design Grafis", "Editor Video", "Firdaus Wijaya Kusuma"],
+    typeSpeed: 100,
+    backSpeed: 50,
+    loop: true
+});
+
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("touchstart", dragStart);
 

@@ -93,6 +93,12 @@ button {
   border: none;
 }
 
+.hianimatetxt .text .typing {
+  color: #20ffda;
+}
+
+
+
 @media screen and (max-width: 900px) {
   .carousel img{
     width: calc(100% / 2);
