@@ -70,6 +70,7 @@ var typing = new Typed (".typing" ,{
     loop: true
 });
 
+
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("touchstart", dragStart);
 
